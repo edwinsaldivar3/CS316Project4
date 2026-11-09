@@ -1,0 +1,9 @@
+{
+    "name": "cs316-project4",
+    "version": "1.0.0",
+    "description": "CS316 Survey Project",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    }
+}
