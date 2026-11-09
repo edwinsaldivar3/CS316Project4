@@ -1,21 +1,66 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>Gaming Survey</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Gaming Survey</h1>
-<p><a href="records.html">Records Page</a> <a href="index.html">Login Page</a></p>
-<form id="survey">
-<fieldset><legend>About Your Gaming</legend>
-<label for="name">Your favorite game (text)</label><input id="name" type="text">
-<p>What type of games do you like? (radio buttons)</p>
-<label><input type="radio" name="favoriteGame" value="Single-player"> Single-player</label>
-<label><input type="radio" name="favoriteGame" value="Multiplayer"> Multiplayer</label>
-<label><input type="radio" name="favoriteGame" value="Both"> Both</label>
-<label for="platform">Favorite gaming platform (dropdown)</label>
-<select id="platform"><option value="">Choose one</option><option>PC</option><option>Xbox</option><option>PlayStation</option><option>Nintendo</option><option>Other</option></select>
-<label for="playTime">Hours played per week (dropdown)</label>
-<select id="playTime"><option value="">Choose one</option><option>0-2</option><option>3-5</option><option>6-10</option><option>10+</option></select>
-<label for="comments">Why do you enjoy gaming? (multi-line text)</label>
-<textarea id="comments" rows="5" cols="45"></textarea>
-</fieldset>
-<button type="submit">Save Survey</button> <button type="button" id="logout">Log Out</button>
-</form><p id="message"></p>
-</main><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Gaming Survey</h1>
+        <p>
+            <a href="records.html">Records Page</a>
+            <a href="index.html">Login Page</a>
+        </p>
+
+        <form id="survey">
+            <fieldset>
+                <legend>About Your Gaming</legend>
+
+                <label for="name">Your favorite game</label>
+                <input id="name" type="text">
+
+                <p>What type of games do you like?</p>
+                <label>
+                    <input type="radio" name="favoriteGame" value="Single-player"> Single-player
+                </label>
+                <label>
+                    <input type="radio" name="favoriteGame" value="Multiplayer"> Multiplayer
+                </label>
+                <label>
+                    <input type="radio" name="favoriteGame" value="Both"> Both
+                </label>
+
+                <label for="platform">Favorite gaming platform</label>
+                <select id="platform">
+                    <option value="">Choose one</option>
+                    <option>PC</option>
+                    <option>Xbox</option>
+                    <option>PlayStation</option>
+                    <option>Nintendo</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="playTime">Hours played per week</label>
+                <select id="playTime">
+                    <option value="">Choose one</option>
+                    <option>0-2</option>
+                    <option>3-5</option>
+                    <option>6-10</option>
+                    <option>10+</option>
+                </select>
+
+                <label for="comments">Why do you enjoy gaming?</label>
+                <textarea id="comments" rows="5" cols="45"></textarea>
+            </fieldset>
+
+            <button type="submit">Save Survey</button>
+            <button type="button" id="logout">Log Out</button>
+        </form>
+
+        <p id="message"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
